@@ -17,14 +17,14 @@
 	--items: 3;
 }
 
-/* Global Style start */
+/* __________Global Style start__________ */
 
 body {
 	font-family: "Roboto", "FF DIN", sans-serif;
 	color: var(--primary-text-color);
 }
 
-/* reset start */
+/* __________reset start__________ */
 
 a {
 	color: inherit;
@@ -77,7 +77,7 @@ img {
 	margin-right: auto;
 }
 
-/* reset end */
+/* __________reset end__________ */
 
 .current {
 	color: var(--accent-text-color);
@@ -89,7 +89,7 @@ img {
 }
 /* Global Style end */
 
-/* Navigation */
+/* ____________________Navigation____________________ */
 
 header {
 	border-bottom: var(--primary-border);
@@ -162,9 +162,9 @@ header {
 	gap: 50px;
 }
 
-/* Main */
+/* ____________________Main____________________ */
 
-/* Hero */
+/* __________Hero__________ */
 .visually-hidden {
 	position: absolute;
 	white-space: nowrap;
@@ -188,10 +188,6 @@ header {
 	background-position: center;
 	background-size: cover;
 }
-
-/* .hero::before {
-	background: rgba(47, 48, 58, 0.4);
-} */
 
 .hero.section {
 	padding-top: 200px;
@@ -249,7 +245,7 @@ header {
 	color: var(--navigation-text-color);
 }
 
-/* About */
+/* __________About__________ */
 
 .card-set {
 	display: flex;
@@ -293,14 +289,14 @@ header {
 	--items: 4;
 }
 
-/* Works */
+/* __________Works__________ */
 
 .works {
 	padding-top: 0;
 	padding-bottom: 94px;
 }
 
-/* Team */
+/* __________Team__________ */
 
 .team {
 	background-color: var(--secondary-background-color);
@@ -340,26 +336,27 @@ header {
 	margin: 0 auto;
 	width: 206px;
 }
-.social-network {
+.socials {
 	padding: 0;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 10px;
 }
-.social-network-list {
+.socials-link {
 	display: flex;
-	width: 44px;
-	height: 44px;
 	align-items: center;
 	justify-content: center;
+	width: 44px;
+	height: 44px;
 	color: var(--primary-icon-color);
+	border-radius: 50%;
 }
 
-.social-network-list:hover,
-.social-network-list:focus {
+.socials-link:hover,
+.socials-link:focus {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
-	border-radius: 50%;
 }
 
 .team-icon {
@@ -376,25 +373,30 @@ header {
 	--items: 6;
 }
 
-.clients-icon-wrap {
-	max-width: 170px;
-	min-height: 92px;
+.clients-link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	fill: var(--primary-icon-color);
+	max-width: 170px;
+	min-height: 92px;
+	border: 1px solid var(--primary-icon-color);
+	border-radius: 4px;
+	color: var(--primary-icon-color);
 	border-radius: 4px;
 	border-color: var(--primary-icon-color);
 }
 
-.clients-icon {
-	width: 100%;
-	height: 100%;
-	border: 1px solid var(--primary-icon-color);
-	border-radius: 4px;
+.clients-link:hover,
+.clients-link:focus {
+	border-color: var(--accent-text-color);
+	color: var(--accent-text-color);
 }
 
-/* Footer */
+.clients-icon {
+	fill: currentColor;
+}
+
+/* ____________________Footer____________________ */
 
 footer {
 	background-color: var(--footer-background-color);
@@ -404,16 +406,6 @@ footer {
 
 .flex {
 	display: flex;
-}
-
-.social {
-	margin-left: 40px;
-	margin-top: 10px;
-}
-
-.footer-wrap {
-	/* display: flex; */
-	/* align-items: center; */
 }
 
 footer .logo {
@@ -455,22 +447,20 @@ footer .logo {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
+	font-weight: 700;
 }
-.social .social-network-list {
+
+.footer-connect {
+	margin-left: 70px;
+	padding-top: 11px;
+}
+
+footer .socials-link {
 	color: var(--primary-white-color);
 	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 50%;
 }
 
-.social .social-network-list:hover {
-	background-color: var(--accent-text-color);
-}
-
-.social-network-list a {
-	padding-top: 4px;
-}
-
-/* Portfolio */
+/* ____________________Portfolio____________________ */
 
 .portfolio-btn {
 	display: flex;
@@ -510,8 +500,9 @@ footer .logo {
 	border-top: 0;
 }
 
-.project-list-item:hover,
-.project-list-item:focus {
+.project-link:hover,
+.project-link:focus {
+	display: block;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
